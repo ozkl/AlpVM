@@ -1,3 +1,4 @@
+# LCC
 Bytecode backend of LCC is used for compiling C source files into the AlpVM assembly.
 Refer to AlpVM assembler and linker for more information on building for AlpVM.
 
