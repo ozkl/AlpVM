@@ -10,7 +10,7 @@ Instructions of AlpVM are fixed-sized (16 bytes).
 
 #### Components
 - [CPU](CPU.md)
-- Interrupts
+- [Interrupts](Interrupts.md)
 - Video
 - Keyboard
 - Timer
