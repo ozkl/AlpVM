@@ -8,4 +8,11 @@ Since it is a simple machine, it has no memory protection support. So the code r
 Assembler and linker produce executables containing symbols (like an ELF or PE file) so that AlpVM can make relocation to achieve position independent code. Linker also makes relocations when combining object files to produce an executable.
 Instructions of AlpVM are fixed-sized (16 bytes).
 
+#### Components
+- [CPU](CPU.md)
+- Interrupts
+- Video
+- Keyboard
+- Timer
+
 Note that, this is a hobby project so codes here are not expected to be the most efficient.
