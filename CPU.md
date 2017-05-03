@@ -1,5 +1,5 @@
 # CPU
-There are 51 instructions in AlpVM for now. Each instruction is 16 bytes long and consists of 4 byte opcode, 2 byte modifier1, 2 byte modifier2, 4 byte parameter1, and 4 byte parameter2.
+There are 52 instructions in AlpVM for now. Each instruction is 16 bytes long and consists of 4 byte opcode, 2 byte modifier1, 2 byte modifier2, 4 byte parameter1, and 4 byte parameter2.
 Modifier1 and modifier2 affect parameter1 and parameter2 respectivly.
 Modifiers are used for declaring a parameter is immediate/register/memory, its offset is relative/absolute, or its data size.
 
