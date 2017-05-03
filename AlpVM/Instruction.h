@@ -87,8 +87,6 @@ enum OpModifier
 	OM_DataTypeF4 = 16384,
 };
 
-#define OPCODE_COUNT 43
-
 //Size should be 16
 struct Instruction
 {
