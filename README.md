@@ -11,12 +11,12 @@ Instructions of AlpVM are fixed-sized (16 bytes).
 #### Components
 - [CPU](CPU.md)
 - [Interrupts](Interrupts.md)
-- Video
+- [Video](Video.md)
 - Keyboard
 - Timer
 
 # Debugger
-AlpVM debugger is a C# Windows Forms application capable of connecting AlpVM via TCP connection. It can read registers and memory of the machine, disassemble the code where executation pointer is and control the machine's state.
+AlpVM debugger is a C# Windows Forms application capable of connecting AlpVM via TCP connection. It can read registers and memory of the machine, disassemble the code where execution pointer is and control the machine's state.
 
 ![Debugger in action](Debugging.png)
 
