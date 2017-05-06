@@ -15,6 +15,11 @@ Instructions of AlpVM are fixed-sized (16 bytes).
 - Keyboard
 - Timer
 
+# Building
+- **AlpVM**: Open AlpVM solution and build it with Visual Studio
+- **Assembler, Linker, Debugger**: Open AlpVM-Assembler solution and build it with Visual Studio
+- **LCC**: Open Visual Studio x86 Command Promt, cd to lcc path and run build.bat
+
 # Debugger
 AlpVM debugger is a C# Windows Forms application capable of connecting AlpVM via TCP connection. It can read registers and memory of the machine, disassemble the code where execution pointer is and control the machine's state.
 
