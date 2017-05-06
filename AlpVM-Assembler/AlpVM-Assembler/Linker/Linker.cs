@@ -242,7 +242,6 @@ namespace AlpVM_Assembler.Linker
                                 break;
                             default:
                                 throw new Exception(string.Format("Symbol section not found: {0}", symbol.Name));
-                                break;
                         }
                     }
                     else
