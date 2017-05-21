@@ -20,6 +20,31 @@ Instructions of AlpVM are fixed-sized (16 bytes).
 - **Assembler, Linker, Debugger**: Open AlpVM-Assembler solution and build it with Visual Studio
 - **LCC**: Open Visual Studio x86 Command Promt, cd to lcc path and run build.bat
 
+# Building for AlpVM
+To run a C code in AlpVM, the code must be built by following these steps:
+- Compile code(s) - run compilec.bat batch file and pass a C file as the argument
+- Assemble - run AlpVM-Assembler.exe with the argument `a` (assembler) to assemble and create an object file
+- Link - run AlpVM-Assembler.exe with the argument `l` (linker) to link object files together and create a runnable
+
+#### Building sample.c
+
+    compilec.bat examples\sample.c
+    
+This should have created sample.c.asm.
+
+    AlpVM-Assembler.exe a sample.o examples\sample.c.asm
+
+This should have created sample.o.
+
+    AlpVM-Assembler.exe l sample.alp sample.o
+
+This should have created sample.alp. If it is intended to link multiple object files, they should be passed to the end as arguments.
+Now, sample.alp can be run in AlpVM.
+
+    AlpVM.exe sample.alp
+    
+If `debug` is passed to the end as an argument, AlpVM breaks immediately and waits debugger to connect.
+
 # Debugger
 AlpVM debugger is a C# Windows Forms application capable of connecting AlpVM via TCP connection. It can read registers and memory of the machine, disassemble the code where execution pointer is and control the machine's state.
 
