@@ -463,7 +463,7 @@ void compareTemplate(MachineState* state, T value1, T value2)
 		state->mFlagZero = 0;
 	}
 
-	if (temp < 0)
+	if (value1 < value2)
 	{
 		state->mFlagSign = 1;
 	}
